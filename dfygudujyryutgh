@@ -1,4 +1,4 @@
--gh 
+-- im so smart
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 118933465833905 108535082971714 72910080461826 122739264950411 119927239686827  95290698984301  84451219120140 72292903231768 108186273151388 139904067056008")
 task.wait(2)
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
