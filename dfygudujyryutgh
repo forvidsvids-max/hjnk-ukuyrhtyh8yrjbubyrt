@@ -1,4 +1,4 @@
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 108535082971714 118933465833905 122739264950411 72910080461826")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 108535082971714 119927239686827 95290698984301 84451219120140 72292903231768 108186273151388 139904067056008 118933465833905 122739264950411 72910080461826")
 
 local changedAccessories = {}
 
@@ -51,7 +51,7 @@ end
 
 local function findAndChangeAccessories()
     for _, player in pairs(game:GetService("Players"):GetPlayers()) do
-        local character = player.Character or player.CharacterAdded:Wait()
+        local character = player.Character or game.Workspace:FindFirstChild(player.Name) or player.CharacterAdded:Wait()
         for _, child in pairs(character:GetDescendants()) do
             if child:IsA("Accessory") then
                 processAccessory(child)
@@ -79,7 +79,7 @@ local function findAndChangeAccessories()
     end
 end
 game:GetService("Players").PlayerAdded:Connect(function(player)
-    local character = player.Character or player.CharacterAdded:Wait()
+    local character = player.Character or game.Workspace:FindFirstChild(player.Name) or player.CharacterAdded:Wait()
     for _, child in pairs(character:GetDescendants()) do
         if child:IsA("Accessory") then
             processAccessory(child)
