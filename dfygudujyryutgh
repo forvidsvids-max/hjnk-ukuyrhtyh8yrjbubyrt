@@ -1,3 +1,10 @@
+   StarterGui:SetCore("SendNotification", {
+	Title = "nebula sg",
+	Text = "i dont think this works for any other executor besides mine so sorry also im not fixing this im way to lazy",
+	Icon = "rbxasset://textures/face.png",
+	Duration = 5,
+})
+
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 108535082971714 119927239686827 95290698984301 84451219120140 72292903231768 108186273151388 139904067056008 118933465833905 122739264950411 72910080461826")
 task.wait(3)
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-pd")
